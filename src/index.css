@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf')
+    format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/inter/Inter-Italic-VariableFont_opsz,wght.ttf')
+    format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Martian Mono';
+  src: url('./assets/fonts/martian-mono/MartianMono-VariableFont_wdth,wght.ttf')
+    format('truetype');
+  font-weight: 100 700;
+}
+
+@import 'tailwindcss';
+
+@theme {
+  --font-secondary: 'Inter', sans-serif;
+  --font-primary: 'Martian Mono', monospace;
+
+  --color-primary-neutral-900: #062630;
+  --color-primary-neutral-700: #385159;
+  --color-primary-neutral-200: #e6e1df;
+  --color-primary-neutral-100: #faf5f3;
+  --color-primary-neutral-000: #ffffff;
+  --color-secondary-light-salmon-500: #fea36f;
+  --color-secondary-light-salmon-100: #ffe2d1;
+  --color-secondary-light-salmon-50: #fff5ef;
+  --color-gradient-text: linear-gradient(
+    107deg,
+    #ff9a60 -11.37%,
+    #062630 61.84%
+  );
+  --color-gradient-bg: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--color-primary-neutral-700);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .headline-xl {
+    @apply font-bold text-[2.375rem] md:text-[3.875rem] leading-[1.2] tracking-[-2px] font-primary;
+  }
+
+  .headline-lg {
+    @apply font-semibold text-[2.125rem] md:text-[3.125rem] leading-[1.3] tracking-[-2px] font-primary;
+  }
+
+  .headline-md {
+    @apply font-semibold text-[1.5rem] md:text-[2.125rem] leading-[1.3] tracking-[-2px] font-primary;
+  }
+
+  .headline-sm {
+    @apply font-semibold text-[1.5rem] leading-[1.1] tracking-[-1px] font-primary;
+  }
+
+  .headline-xs {
+    @apply font-semibold text-base md:text-lg leading-[1.3] tracking-[-1px] font-primary;
+  }
+
+  .headline {
+    @apply font-normal text-sm leading-[1.2] tracking-[-1px] font-primary;
+  }
+
+  .paragraph {
+    @apply font-normal text-xl leading-[1.4] tracking-[-0.5px];
+  }
+
+  .gradient-text {
+    background: var(--color-gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+}
