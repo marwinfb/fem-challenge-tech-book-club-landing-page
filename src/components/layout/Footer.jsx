@@ -7,7 +7,7 @@ import Arrow from "../utilities/Arrow";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary-neutral-900" style={{ backgroundImage: `url(${assets.patternDarkBgSvg})`}}>
+    <footer className="bg-primary-neutral-900 footer-bg">
       <Container>
         <div className="pt-20 pb-16">
           <Headline className="text-primary-neutral-000 text-center mx-auto">
