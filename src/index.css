@@ -97,4 +97,12 @@
     color: transparent;
   }
 
+  .header-bg {
+    background-image: url('./assets/images/pattern-light-bg.svg');
+  }
+
+  .footer-bg {
+    background-image: url('./assets/images/pattern-dark-bg.svg');
+  }
+
 }

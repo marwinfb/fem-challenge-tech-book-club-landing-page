@@ -2,9 +2,9 @@ import Logo from "../utilities/Logo"
 
 const Navigation = () => {
   return (
-    <nav>
+    <div>
         <Logo />
-    </nav>
+    </div>
   )
 }
 

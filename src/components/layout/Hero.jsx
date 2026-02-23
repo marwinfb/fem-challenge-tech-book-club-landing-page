@@ -23,7 +23,7 @@ const Hero = () => {
         <div className="mt-8">
           <Button
             variant="primary"
-            className="flex items-center justify-between gap-3"
+            className="flex justify-between gap-3"
             href="#membership"
           >
             Review membership options
