@@ -55,7 +55,7 @@ const FeaturesSection = () => {
               pictureClassName="rounded-full"
               className="rounded-lg w-full"
             />
-            {content.id === 2 && <img src={assets.logosTechSvg} alt="Tech Logos" className="hidden absolute md:block md:right-12 lg:right-135 md:bottom-12 h-auto" />}
+            {content.id === 2 && <img src={assets.logosTechSvg} alt="Programming languages and technologies used by our community" className="hidden absolute md:block md:right-12 lg:right-135 md:bottom-12 h-auto" />}
           </div>  
         </div>
       ))}

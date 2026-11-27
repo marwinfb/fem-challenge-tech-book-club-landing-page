@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "../shared/Container";
 import StarRatings from "../utilities/StarRatings";
 
 const TestimonialSection = () => {
