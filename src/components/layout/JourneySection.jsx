@@ -33,7 +33,7 @@ const JourneySection = () => {
             <li key={step.id} className="flex flex-col gap-5 md:gap-6">
               <div className="flex items-center justify-between gap-5">
                 <div className="w-8 h-8 md:w-10 md:h-10 rounded-sm border-2 font-semibold border-primary-neutral-900 flex items-center justify-center">{step.id}</div>
-                {step.id !== stepsContent.length && <img src={assets.patternArrowSvg} className="hidden lg:block" alt="" />}
+                {step.id !== stepsContent.length && <img src={assets.patternArrowSvg} className="hidden lg:block" alt="Arrow connecting steps" />}
               </div>
               <p className="text-lg">{step.headline}</p>
             </li>

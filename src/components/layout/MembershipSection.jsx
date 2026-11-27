@@ -8,6 +8,7 @@ const membershipContent = [
     price: "$19",
     details: ["1 book /month", "Online forums"],
     isCustom: false,
+    isHighlighted: false,
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ const membershipContent = [
     price: "$29",
     details: ["2 books /month", "Virtual meetups"],
     isCustom: false,
+    isHighlighted: true,
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const membershipContent = [
     price: "Custom",
     details: ["Team access", "Private sessions"],
     isCustom: true,
+    isHighlighted: false,
   },
 ];
 
